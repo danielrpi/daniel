@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block conteudo %} 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h2>
+                        Oi, tudo bem?
+                    </h2>
+                    <p>
+                        Seja bem-vindo ao sistema de gestão de atendimentos
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://is.tuebingen.mpg.de/assets/noEmployeeImage_md-eaa7c21cc21b1943d77e51ab00a5ebe9.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Clientes</h5>
+                        <p class="card-text">Gerencie o cadastro dos clientes</p>
+                        <a href="/atendimento/paciente" class="btn btn-primary">Go</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://is.tuebingen.mpg.de/assets/noEmployeeImage_md-eaa7c21cc21b1943d77e51ab00a5ebe9.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Médicos</h5>
+                        <p class="card-text">Gerencie os profissionais que atendem na sua clinica </p>
+                        <a href="/atendimento/medico" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://is.tuebingen.mpg.de/assets/noEmployeeImage_md-eaa7c21cc21b1943d77e51ab00a5ebe9.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Agendamento</h5>
+                        <p class="card-text">Agende consultas com os médicos de acordo com as escala.</p>
+                        <a href="#" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://is.tuebingen.mpg.de/assets/noEmployeeImage_md-eaa7c21cc21b1943d77e51ab00a5ebe9.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultas</h5>
+                        <p class="card-text">Os médicos podem atender os pacientes e registrar o atendimento </p>
+                        <a href="#" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {%endblock %}
