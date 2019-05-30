@@ -8,3 +8,10 @@ class Paciente(models.Model):
     cpf = models.CharField(max_length=11)
     sexo = models.CharField(max_length=1)
 
+class Medico(models.Model):
+    nome = models.CharField(max_length=50)
+    crm = models.CharField(max_length=50)
+    especialidade = models.CharField(max_length=50)
+    idade=models.IntegerField()
+   
+    
