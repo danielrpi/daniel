@@ -9,21 +9,20 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">CRM</th>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Especialidade</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Gravida</th>
                                 <th scope="col">Idade</th>
                                 
                             </tr>
                         </thead>
                         <tbody>
-                                {%for medico in medicos %}
+                                {%for medicamento in medicamentos %}
                             <tr>
-                                <th scope="row">{{medico.id}}</th>
-                                <td>{{medico.crm}}</td>
-                                <td>{{medico.nome}}</td>
-                                <td>{{medico.especialidade}}</td>
-                                <td>{{medico.idade}}</td>
+                                <th scope="row">{{medicamento.id}}</th>
+                                <td>{{medicamento.nome}}</td>
+                                <td>{{medicamento.valor}}</td>
+                                <td>{{medicamento.gravida}}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
